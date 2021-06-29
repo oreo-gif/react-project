@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Miniver&family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<a href="https://icons8.com/icon/102344/menu"></a>
+<a href="https://icons8.com/icon/121477/macos-close"></a>
+
+
+<section class="text-black-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-large title-font mb-4 text-black-900">Contact Us</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Intro</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-black-600">Name</label>
+              <input type="text" id="name" name="name" class="w-full bg-white-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-black-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-white-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-black-600">Message</label>
+              <textarea id="message" name="message" class="w-full bg-white-100 bg-opacity-50 rounded border border-black-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+            <span class="inline-flex">
+            </span>
+            <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-white-600 rounded text-lg">Send</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <title> Finwealth </title>
+</head>
+<body style="background-color:#81C676">
+    <section id="banner"> 
+</section>
+<div id="sideNav">
+    <nav>
+    <ul>
+      <li><a href="home.html"> Home</a></li>
+      <li><a href="app.html"> FinWealth App</a></li>
+      <li><a href="contact.html"> Contact us</a></li>
+      <li><a href="reward.html"> FinRewards</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="menubtn">
+  <img src="https://img.icons8.com/plasticine/100/000000/menu.png" id="menu">
+ </div>
+ <script>
+     var menubtn = document.getElementById("menubtn")
+     var sideNav = document.getElementById("sideNav")
+     var menu = document.getElementById("menu")
+     
+     sideNav.style.right="-250px";
+     
+     menubtn.onclick = function(){
+         if(sideNav.style.right == "-250px"){
+             sideNav.style.right="0";
+             menu.src = "https://img.icons8.com/ios-glyphs/30/26e07f/macos-close.png";
+         
+         }
+         else{
+             sideNav.style.right="-250px";
+             menu.src = "https://img.icons8.com/plasticine/100/000000/menu.png";
+         }
+     }
+     </script>
+     
+     </body>
+     </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Miniver&family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<a href="https://icons8.com/icon/102344/menu"></a>
+<a href="https://icons8.com/icon/121477/macos-close"></a>
+
+     <title> Finwealth </title>
+</head>
+<body style="background-color:#81C676">
+
+  <section class="text-black-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="finwealth.png">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-large text-black-900">About FinWealth</h1>
+        <p class="mb-8 leading-relaxed"> The pandemic has caused a financial strain on many individuals.
+          The student loan debt continues to increase with no clear solution and many are struggling to provide and care for themselves and others under this financial stress. Finwealth gives users an incentive to save, invest, and help them become financially responsible by rewarding them with gift cards, coupons, etc.
+          We help them discover ways to invest safely by finding them investments that fit their financial profile/portfolio.
+         We also give them budgeting tips based on the progress they have made.
+      </p>
+        <div class="flex justify-center">
+       
+        </div>
+      </div>
+    </div>
+  </section>
+<div id="sideNav">
+    <nav>
+    <ul>
+      <li><a href="home.html"> Home</a></li>
+      <li><a href="app.html"> FinWealth App</a></li>
+      <li><a href="contact.html"> Contact us</a></li>
+      <li><a href="reward.html"> FinRewards</a></li>
+
+    </ul>
+    </nav>
+</div>
+<div id="menubtn">
+ <img src="https://img.icons8.com/plasticine/100/000000/menu.png" id="menu">
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right="-250px";
+    
+    menubtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0";
+            menu.src = "https://img.icons8.com/ios-glyphs/30/26e07f/macos-close.png";
+        
+        }
+        else{
+            sideNav.style.right="-250px";
+            menu.src = "https://img.icons8.com/plasticine/100/000000/menu.png";
+        }
+    }
+    </script>
+    
+    </body>
+    </html>
